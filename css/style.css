@@ -708,6 +708,7 @@ a {
 }
 
 .footer__widget__wrapper a {
+	display: flex;
 	padding-right: 30px;
 }
 
@@ -715,8 +716,10 @@ a {
 	padding-right: 0px;
 }
 
+
 .footer__address {
-	padding: 20px;
+	display: flex;
+
 }
 
 
