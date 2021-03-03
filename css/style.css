@@ -1,43 +1,23 @@
-/******************************************************************
-  Theme Name: Staging
-  Description: Staging bootstrap tamplate
-  Author: Colorib
-  Author URI: https://www.colorib.com//
-  Version: 1.0
-  Created: Colorib
-******************************************************************/
+/* Default Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
-/*------------------------------------------------------------------
-[Table of contents]
+/* color */
 
-1.  Template default CSS
-	1.1	Variables
-	1.2	Mixins
-	1.3	Flexbox
-	1.4	Reset
-2.  Helper Css
-3.  Header Section
-4.  Hero Section
-5.  Banner Section
-6.  Product Section
-7.  Intagram Section
-8.  Latest Section
-9.  Contact
-10.  Footer Style
--------------------------------------------------------------------*/
-
-/*----------------------------------------*/
-
-/* Template default CSS
-/*----------------------------------------*/
+:root {
+	--white-color: #ffffff;
+	--black-color: #000000;
+	--pink-color: #cc0e74;
+	--green-color: #75cfb8;
+	--gray-color: #f7f7f7;
+}
 
 html,
 body {
 	height: 100%;
-	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-family: 'Noto Sans KR', sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
-
 
 input:focus,
 select:focus,
@@ -54,7 +34,7 @@ a:hover,
 a:focus {
 	text-decoration: none;
 	outline: none;
-	color: #ffffff;
+	color: var(--white-color);
 }
 
 ul,
@@ -109,10 +89,6 @@ li {
 	display: inline-block;
 }
 
-.header__menu {
-	text-align: center;
-}
-
 .header__menu ul li {
 	list-style: none;
 	display: inline-block;
@@ -120,20 +96,9 @@ li {
 	margin-right: 80px;
 }
 
-.header__menu ul li.active a:after {
-	-webkit-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
-}
-
-.header__menu ul li:hover a:after {
-	-webkit-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
-}
 
 .header__menu ul li:hover .dropdown {
-	top: 70px;
+	top: 80px;
 	opacity: 1;
 	visibility: visible;
 }
@@ -150,7 +115,7 @@ li {
 	height: 200px;
 	display: flex;
 	justify-content: center;
-	background: #ffffff;
+	background: var(--gray-color);
 	text-align: center;
 	padding: 5px 0;
 	z-index: 9;
@@ -164,11 +129,16 @@ li {
 .header__menu ul li .dropdown li {
 	display: block;
 	margin-right: 0;
+	border-right: 1px solid var(--black-color);
+}
+
+.header__menu ul li .dropdown li:nth-last-child() {
+	border: none;
 }
 
 .header__menu ul li .dropdown li a {
 	font-size: 14px;
-	color: #111111;
+	color: var(--black-color);
 	font-weight: 400;
 	padding: 5px 20px;
 	text-transform: capitalize;
@@ -184,27 +154,11 @@ li {
 
 .header__menu ul li a {
 	font-size: 15px;
-	color: #ffffff;
+	color: var(--white-color);
 	display: block;
-	font-weight: 600;
+	font-weight: 100;
 	padding: 5px 0;
 	position: relative;
-}
-
-.header__menu ul li a:after {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	height: 2px;
-	width: 100%;
-	background: #dfa667;
-	content: "";
-	-webkit-transition: all, 0.4s;
-	-o-transition: all, 0.4s;
-	transition: all, 0.4s;
-	-webkit-transform: scale(0);
-	-ms-transform: scale(0);
-	transform: scale(0);
 }
 
 .header__widget {
@@ -212,13 +166,21 @@ li {
 }
 
 .header__widget a {
-	color: #ffffff;
+	color: var(--white-color);
+	border: 1px solid var(--white-color);
+	font-weight: 300;
+	padding: 10px 20px;
 }
 
 .header__widget li {
 	list-style: none;
 	display: inline-block;
-	margin: 15px;
+	margin: 15px 5px;
+}
+
+.header__widget .header__widget__site {
+	background-color: var(--pink-color);
+	border: none;
 }
 
 .offcanvas-menu-wrapper {
@@ -239,7 +201,7 @@ li {
 
 .hero__items {
 	height: 750px;
-	padding: 0px 740px 0px 0px;
+	padding: 0px 800px 0px 0px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -253,7 +215,7 @@ li {
 
 
 .hero__text h2 {
-	color: #ffffff;
+	color: var(--white-color);
 	font-size: 72px;
 	font-weight: bold;
 	line-height: 75px;
@@ -267,18 +229,18 @@ li {
 }
 
 .hero__text p {
-	color: #ffffff;
+	color: var(--white-color);
 	font-size: 20px;
 }
 
 .hero__text a {
-	color: #ffffff;
-	background-color: #cc0e74;
+	color: var(--white-color);
+	background-color: var(--pink-color);
 	margin-top: 20px;
 	padding: 10px 40px;
 }
 .hero__text a:hover {
-	color: #c4c4c4;
+	color: var(--gray-color)
 }
 
 
@@ -287,7 +249,7 @@ li {
 	opacity: 1;
 }
 
-.hero__slider.owl-carousel .owl-item.active .hero__text .primary-btn {
+.hero__slider.owl-carousel .owl-item.active .hero__text {
 	top: 0;
 	opacity: 1;
 }
@@ -298,7 +260,7 @@ li {
 
 .hero__slider.owl-carousel .owl-nav button {
 	font-size: 28px;
-	color: #ffffff;
+	color: var(--white-color);
 	position: absolute;
 	left: 50px;
 	top: 50%;
@@ -360,7 +322,7 @@ li {
 
 .slide-num span {
 	font-size: 16px;
-	color: #ffffff;
+	color: var(--white-color);
 	font-weight: 600;
 	margin-right: 140px;
 }
@@ -380,7 +342,7 @@ li {
 }
 
 .slider__progress span {
-	background: #ffffff;
+	background: var(--white-color);
 	height: 5px;
 	display: block;
 	-webkit-transition: all, 0.4s;
@@ -394,8 +356,8 @@ li {
 /* 4card */
 
 .card:hover {
-	color: #ffffff;
-	background-color: #cc0e74;
+	color: var(--white-color);
+	background-color: var(--pink-color);
 }
 
 .card_main {
@@ -403,14 +365,14 @@ li {
 }
 
 .card_main a {
-	color: #cc0e74;
-	border: 1px solid #cc0e74;
+	color: var(--pink-color);
+	border: 1px solid var(--pink-color);
 	padding: 10px 30px;
 }
 
 .card_main a:hover {
-	background-color: #cc0e74;
-	color: #ffffff;
+	background-color: var(--pink-color);
+	color: var(--white-color);
 }
 
 .card-container {
@@ -421,7 +383,7 @@ li {
   }
   
   .card-container .card {
-	border: solid 1px #000000;
+	border: solid 1px var(--black-color);
 	margin: 10px;
 	padding: 10px;
 	width: 300px;
@@ -432,8 +394,8 @@ li {
 	padding: 10px;
   }
 
-  .card-body h3 {
-	  margin-bottom: 20px;
+  .card-body h3, p {
+	  margin-bottom: 40px;
   }
  
   .card-container .card img.card-img {
@@ -463,7 +425,7 @@ li {
 
 .callto__text span {
 	font-size: 16px;
-	color: #ffffff;
+	color: var(--white-color);
 	padding-top: 10px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -478,61 +440,46 @@ li {
 	right: -10%;
 }
 
-
 /* callto end */
 
-.ThreeCardBox {
-	margin-top: 80px;
+
+/* Three */
+.Three__card-container {
+	padding: 80px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+  }
+
+.Three__card-container .Three__card img.card-img {
+	height: 260px;
+	width: 360px;
+	margin: 20px;
+	object-fit: cover;
+  }
+
+.Three__card-body p{
 	text-align: center;
+	font-weight: 500;
 }
 
-.ThreeCardBox .cardinfo {
-	margin-right: 150px;
+.Three__main__card-body {
+	margin-right: 100px;
 }
 
-.ThreeCardBox .card_main {
-	margin: 0px 50px 0px 50px;
+.Three__main__card-body h3, p {
+	margin-bottom: 40px;
 }
 
-.ThreeCardBox .card_main a {
-	color: #75cfb8;
-	border: 1px solid #75cfb8;
+.Three__card_main a {
+	color: var(--green-color);
+	border: 1px solid var(--green-color);
 	padding: 10px 30px;
 }
 
-.ThreeCardBox .card_main a:hover {
-	background-color: #75cfb8;
-	color: #ffffff;
-}
-
-.ThreeCardBox p,
-h3,
-a {
-	margin-top: 10px;
-	text-align: left;
-	font-weight: bold;
-}
-
-.ThreeCardBox__wrapper {
-	display: flex;
-	justify-content: center;
-}
+/* Three end */
 
 
-.ThreeCardBox__wrapper img {
-	margin: 10px;
-}
-
-.ThreeCardBox__imgcard p {
-	text-align: center;
-	color: #000000;
-	font-weight: bold;
-}
-
-
-.ThreeCardBox__wrapper .card-body {
-	text-align: left;
-}
 
 /*---------------------
   Footer
@@ -545,7 +492,7 @@ a {
 }
 
 .footer__top {
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid var(--gray-color);
 	padding-bottom: 20px;
 	text-align: center;
 }
@@ -574,12 +521,12 @@ a {
 }
 
 .footer__widget a {
-	color: black;
+	color: var(--black-color);
 	font-weight: bold;
 }
 
 .footer__widget a:hover {
-	color: #c4c4c4;
+	color: var(--gray-color);
 }
 
 .footer__logo {
@@ -610,14 +557,14 @@ footer .container {
 
 .breadcrumb__text h2 {
 	font-size: 42px;
-	color: #ffffff;
+	color: var(--white-color);
 	text-transform: uppercase;
 	margin-bottom: 12px;
 }
 
 .breadcrumb__links a {
 	font-size: 15px;
-	color: #ffffff;
+	color: var(--white-color);
 	display: inline-block;
 	position: relative;
 	margin-right: 12px;
@@ -632,7 +579,7 @@ footer .container {
 
 .breadcrumb__links span {
 	font-size: 15px;
-	color: #dfa667;
+	color: var(--pink-color);
 	display: inline-block;
 }
 
@@ -755,7 +702,7 @@ footer .container {
 	.canvas__open {
 		display: block;
 		font-size: 22px;
-		color: #ffffff;
+		color: var(--white-color);
 		height: 35px;
 		width: 35px;
 		line-height: 35px;
@@ -790,7 +737,7 @@ footer .container {
 		left: -300px;
 		width: 300px;
 		height: 100%;
-		background: #111111;
+		background: var(--black-color);
 		padding: 50px 20px 30px 30px;
 		display: block;
 		z-index: 99;
@@ -816,10 +763,10 @@ footer .container {
 
 
 	.offcanvas__widget a {
-		color: #eeeeee;
+		color: var(--white-color);
 	}
 	.offcanvas__widget a:hover {
-		color: #c4c4c4;
+		color: var(--gray-color);
 	}
 
 
@@ -845,24 +792,24 @@ footer .container {
 	.slicknav_nav a {
 		padding: 7px 0;
 		margin: 0;
-		color: #ffffff;
+		color: var(--white-color);
 		font-weight: 600;
 	}
 
 	.slicknav_nav .slicknav_arrow {
-		color: #ffffff;
+		color: var(--white-color);
 	}
 
 	.slicknav_nav .slicknav_row:hover {
 		border-radius: 0;
 		background: transparent;
-		color: #ffffff;
+		color: var(--white-color);
 	}
 
 	.slicknav_nav a:hover {
 		border-radius: 0;
 		background: transparent;
-		color: #ffffff;
+		color: var(--white-color);
 	}
 
 	.slicknav_nav {
@@ -898,7 +845,7 @@ footer .container {
 		display: flex;
 		justify-content: center;
 		padding: 20px;
-		border-bottom: 1px solid gray;
+		border-bottom: 1px solid var(--gray-color);
 	}
 
 	.footer__top a:nth-child(5) {
@@ -936,7 +883,7 @@ footer .container {
 	.canvas__open {
 		display: block;
 		font-size: 32px;
-		color: #ffffff;
+		color: var(--white-color);
 		height: 35px;
 		width: 35px;
 		text-align: center;
@@ -970,7 +917,7 @@ footer .container {
 		left: -300px;
 		width: 300px;
 		height: 100%;
-		background: #111111;
+		background: var(--black-color);
 		padding: 50px 20px 30px 30px;
 		display: block;
 		z-index: 99;
@@ -1012,24 +959,24 @@ footer .container {
 	.slicknav_nav a {
 		padding: 7px 0;
 		margin: 0;
-		color: #ffffff;
+		color: var(--white-color);
 		font-weight: 600;
 	}
 
 	.slicknav_nav .slicknav_arrow {
-		color: #ffffff;
+		color: var(--white-color);
 	}
 
 	.slicknav_nav .slicknav_row:hover {
 		border-radius: 0;
 		background: transparent;
-		color: #ffffff;
+		color: var(--white-color);
 	}
 
 	.slicknav_nav a:hover {
 		border-radius: 0;
 		background: transparent;
-		color: #ffffff;
+		color: var(--white-color);
 	}
 
 	.slicknav_nav {
