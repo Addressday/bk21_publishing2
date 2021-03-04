@@ -49,12 +49,9 @@ li {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
+	height: 35rem;
 }
 
-.spad {
-	padding-top: 10rem;
-	padding-bottom: 10rem;
-}
 
 
 .container {
@@ -359,7 +356,7 @@ li {
 }
 
 .card_main {
-	margin: 0rem 5rem;
+	margin-right: 6rem;
 }
 
 .card_main h3{
@@ -410,6 +407,13 @@ li {
 	object-fit: cover;
   }
 
+  /* dot */
+  .slider {
+	max-width: 600px;
+	max-height: 400px;
+	box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+
+  }
 
 /*---------------------
   Call To Action
@@ -441,32 +445,34 @@ li {
 
 .callto .rightBtn {
 	position: absolute;
-	top: 146%;
-	right: -10%;
+	top: 118%;
+	right: -10.5%;
 }
 
 /* callto end */
 
 
 /* Three */
+
 .Three__card-container {
-	padding: 8rem;
-	display: flex;
+	margin: 8rem !important;
+    display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	font-size: 1.6rem;
+	font-size: 1.6rem;	
   }
 
 .Three__card-container .Three__card img.card-img {
 	height: 26rem;
 	width: 36rem;
-	margin: 0rem 2rem;
+	margin: 0rem 1rem;
 	object-fit: cover;
   }
 
-.Three__card_main {
-	margin-right: 8rem;
-}
+
+  .Three__card_main {
+	  margin-right: 15rem;
+  }
 
 .Three__card_main h3{
 	font-weight: 600;
@@ -516,10 +522,11 @@ li {
 -----------------------*/
 
 .footer {
+	background-color: var(--gray-color);
 	padding-top: 8rem;
 	margin: 0 auto;
 	width: 100%;
-	background-color: var(--gray-color);
+	
 	font-size: 1.6rem;
 	font-weight: 300;
 }
@@ -536,7 +543,7 @@ li {
 
 
 .footer__widget__wrapper {
-	padding: 2rem 6rem;
+	padding: 0rem 6rem;
 }
 
 .footer__widget__wrapper a {
@@ -656,14 +663,6 @@ footer .container {
 	.hero__slider.owl-carousel .owl-nav button.owl-next {
 		right: 1.5rem;
 	}
-
-	.hero__items {
-		height: 71rem;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		padding: 0rem 4rem;
-	}
 	
 }
 
@@ -683,7 +682,6 @@ footer .container {
 	.header {
 		padding: 2rem 0 0;
 		text-align: center;
-
 	}
 
 	.slide-num {
@@ -808,7 +806,9 @@ footer .container {
 		display: block !important;
 	}
 
-
+	.owl-nav {
+		display: none;
+	}
 
 	.header__menu {
 		display: none;
@@ -818,18 +818,78 @@ footer .container {
 		display: none;
 	}
 
-
+	
 
 	.callto__wrapper {
-		display: flex;
-		justify-content: center;
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+
+	.callto {
+		width: 100%;
+	}
+
+	.callto .set-bg {
+		height: 1rem;
+	}
+
+	.callto .rightBtn {
+		display: none;
+	}
+	
+
+	/* four__card */
+
+	.card-container{
+		display: grid;
+		justify-content: flex-start;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.card-container > .card h3 {
+		margin-bottom: 1rem;
+	}
+	
+	/* three__card */
+
+
+	.Three__card_main {
+		text-align: center;
+		margin-right: 0;
+		margin-bottom: 3rem;
+	}
+
+ 	.Three__card-container {
+		display: block;
+		text-align: center;
+
+	}
+
+	.Three__card-container > .Three__card_main {
+		margin-bottom: 4rem;
+	}
+
+	.Three__card p{
+		margin-bottom: 3rem;
+	}
+
+
+	.footer {
+		background-color: var(--gray-color);
+		height: 120rem;
+		padding-top: 0rem;
 	}
 
 	.footer__top a {
 		display: flex;
 		justify-content: center;
-		padding: 2rem;
-		border-bottom: .1rem solid var(--gray-color);
+		padding: 3rem;
+		border-bottom: .1rem solid var(--line-color);
+	}
+	
+	.footer__top a:nth-child(5) {
+		padding-bottom: 0;
 	}
 
 	.footer__top a:nth-child(5) {
@@ -843,31 +903,60 @@ footer .container {
 	.footer__logo {
 		float: none;
 	}
+
+	.footer__widget {
+		display: block;
+	}
+
+	.footer__widget > .footer__logo {
+		margin-bottom: 5rem;
+	}
+
+	.footer__address {
+		padding-bottom: 4rem;
+	}
+
+	.footer__widget > .footer__address li {
+		display: flex;
+		padding: 1rem 0rem;
+	}
+
+	.footer__widget > .footer__address p {
+		line-height: 1.8;
+	}
 }
 
 /* Wide Mobile = 480px */
 
 @media only screen and (max-width: 76.7rem) {
 
+	.header {
+		padding-bottom: 3rem;
+		border-bottom: .1rem solid var(--white-color);
+	}
 
 	.header__logo {
 		float: left;
-		margin: 0rem 0 0 0;
+		margin: auto;
+	}
+	
+	.hero__text h2 {
+		font-size: 1.2rem;
+		line-height: 2.5rem;
+		margin: 1rem;
 	}
 
-
-
-	.hero__text h2 {
-		font-size: 3.4rem;
-		line-height: 4.5rem;
+	.hero__text p {
+		margin-bottom: 4rem;
+		font-size: 1.2rem;
 	}
 
 	.hero__items {
 		height: 71rem;
 		display: -webkit-box;
 		display: -ms-flexbox;
-		display: flex;
-		padding: 0 4rem;
+		display: block;
+		padding: 12rem 2rem;
 	}
 
 
@@ -985,14 +1074,10 @@ footer .container {
 		display: none;
 	}
 
-
-	.hero__slider.owl-carousel .owl-nav button {
-		left: 0;
+	.owl-nav {
+		display: none;
 	}
 
-	.hero__slider.owl-carousel .owl-nav button.owl-next {
-		right: 0;
-	}
 
 	.hero__text h2 {
 		font-size: 4.6rem;
@@ -1013,33 +1098,118 @@ footer .container {
 		margin: 0 auto;
 	}
 
-	.Four__card-body {
-		text-align: center;
-		margin: 2rem;
+
+
+	.callto__wrapper {
+		display: block;
+		width: 100%;
+		margin: 0;
 	}
 
-	.card-container {
-		display: flex;
-		flex-direction: column;
+	.callto {
+		width: 100%;
 	}
+
+	.callto .set-bg {
+		height: 1rem;
+	}
+
+	.callto .rightBtn {
+		display: none;
+	}
+	
+
+	/* 4card */
+
+	.card_main {
+		display: flex;
+		justify-content: baseline;
+	}
+
+	.card-container{
+		display: grid;
+		justify-content: flex-start;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.card-container > .card h3 {
+		margin-bottom: 1rem;
+	}
+
+
+
+	
+	/* three_card */
+
+
+	.Three__card_main {
+		text-align: center;
+		margin-right: 0;
+		margin-bottom: 3rem;
+	}
+
+ 	.Three__card-container {
+		display: block;
+		text-align: center;
+	}
+
+	.Three__card p{
+		margin-bottom: 3rem;
+	}
+
+	.footer {
+		background-color: var(--gray-color);
+		height: 120rem;
+		padding-top: 0rem;
+	}
+
 
 	.footer__top__text {
 		margin-bottom: 3.5rem;
 	}
 
 
-	.ThreeCardBox__wrapper {
+	.footer__top a {
+		display: flex;
+		justify-content: center;
+		padding: 3rem;
+		border-bottom: .1rem solid var(--line-color);
+	}
+
+	.footer__top a:nth-child(5) {
+		border: none;
+		padding-bottom: 0;
+	}
+
+
+	.footer__widget {
 		display: block;
+	}
+
+	.footer__widget > .footer__logo {
+		margin-bottom: 0rem;
+	}
+
+
+	.footer__widget > .footer__address li {
+		display: flex;
+		padding: 1rem 0rem;
+	}
+
+	.footer__widget > .footer__address p {
+		line-height: 1.8;
 	}
 }
 
 
 /* Small Device = 320px */
 
-@media only screen and (max-width: 47.9rem) {
+/* @media only screen and (max-width: 47.9rem) {
 	header {
 		padding: 2rem 0 0;
 		text-align: center;
+		padding-bottom: 4rem;
+		border-bottom: .1rem solid var(--white-color);
 	}
 
 	.section-title h2 {
@@ -1085,7 +1255,23 @@ footer .container {
 		line-height: 4.5rem;
 	}
 
+	.Three__card_main {
+		text-align: center;
+		margin-right: 0;
+		margin-bottom: 3rem;
+	}
+
+ 	.Three__card-container {
+		display: block;
+		text-align: center;
+	}
+
+	.Three__card p{
+		margin-bottom: 3rem;
+	}
+
+
 	.footer__top__text h2 {
 		font-size: 3.2rem;
 	}
-}
+} */
