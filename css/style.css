@@ -70,13 +70,27 @@ li {
 	top: 0;
 	left: 0;
 	z-index: 9;
-	padding: 2rem 0 0;
+	padding: 2rem 0 2rem;
 	text-align: center;
 	font-size: 1.4rem;
 }
 
+
+.header:hover{
+	/* background-color: var(--white-color); */
+}
+
+
 .header__logo a {
 	display: inline-block;
+}
+
+
+
+.header__menu ul li .navmenu:hover{
+	color: var(--black-color);
+	font-weight: 500;
+	border-bottom: .5rem solid var(--pink-color);
 }
 
 .header__menu ul li {
@@ -84,13 +98,22 @@ li {
 	display: inline-block;
 	position: relative;
 	margin-right: 8rem;
-	margin-top: 1rem;
+	margin: 1rem 5rem;
 	justify-content: flex-end;
 }
 
+.header__menu ul li a {
+	font-size: 1.5rem;
+	color: var(--white-color);
+	display: block;
+	font-weight: 100;
+	padding-top: .5rem;
+	padding-bottom: 3rem;
+	position: relative;
+}
 
 .header__menu ul li:hover .dropdown {
-	top: 8rem;
+	top: 6.3rem;
 	opacity: 1;
 	visibility: visible;
 }
@@ -101,13 +124,14 @@ li {
 
 .header__menu ul li .dropdown {
 	position: absolute;
-	left: 0;
+	right: -120rem;
 	top: 6rem;
-	width: 120rem;
+	width: 235rem;
 	height: 24rem;
 	display: flex;
 	justify-content: center;
 	background: var(--gray-color);
+	box-shadow: 0 5px 5px -5px #333333;
 	text-align: center;
 	padding: .5rem 0;
 	z-index: 9;
@@ -124,7 +148,6 @@ li {
 	border-right: .1rem solid var(--line-color);
 	margin-top: 2rem;
 	padding-right: 8rem;
-	text-align: center;
 }
 
 .header__menu ul li .dropdown li:nth-child(5){
@@ -140,20 +163,11 @@ li {
 }
 
 .header__menu ul li .dropdown li a:hover {
-	color:#000000b3;
+	color: var(--black-color);
 }
 
 .header__menu ul li .dropdown li a:after {
 	display: none;
-}
-
-.header__menu ul li a {
-	font-size: 1.5rem;
-	color: var(--white-color);
-	display: block;
-	font-weight: 100;
-	padding: .5rem 0;
-	position: relative;
 }
 
 .header__widget {
@@ -196,7 +210,7 @@ li {
 
 .hero__items {
 	height: 75rem;
-	padding-right: 80rem;
+	padding-right: 85rem;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -231,8 +245,9 @@ li {
 .hero__text a {
 	color: var(--white-color);
 	background-color: var(--pink-color);
+	font-size: 1.4rem;
 	margin-top: 2rem;
-	padding: 1rem 4rem;
+	padding: 1.5rem 5rem;
 }
 .hero__text a:hover {
 	color: var(--gray-color)
@@ -471,7 +486,7 @@ li {
 
 
   .Three__card_main {
-	  margin-right: 15rem;
+	 margin-right: 20rem;
   }
 
 .Three__card_main h3{
