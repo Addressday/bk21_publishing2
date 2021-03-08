@@ -19,6 +19,8 @@ html, body {
 	font-size: 10px;
 	font-family: 'Noto Sans KR', sans-serif;
 	-webkit-font-smoothing: antialiased;
+	overflow-x:hidden;
+	overflow-y:auto;
 }
 
 
@@ -113,7 +115,7 @@ li {
 }
 
 .header__menu ul li:hover .dropdown {
-	top: 6.3rem;
+	top: 8.5rem;
 	opacity: 1;
 	visibility: visible;
 }
@@ -613,10 +615,16 @@ footer .container {
 	margin-bottom: 1.2rem;
 }
 
+.breadcrumb__links {
+	background-color: var(--gray-color);
+	display: flex;
+	justify-content: center;
+	padding: 4rem;
+}
+
 .breadcrumb__links a {
 	font-size: 1.5rem;
-	color: var(--white-color);
-	display: inline-block;
+	color: var(--black-color);
 	position: relative;
 	margin-right: 1.2rem;
 }
@@ -634,6 +642,10 @@ footer .container {
 	display: inline-block;
 }
 
+.breadcrumb__content {
+	text-align: center;
+	margin: 12rem;
+}
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 
