@@ -647,10 +647,12 @@ footer .container {
 
 .breadcrumb__content {
 	text-align: center;
+	margin: 5rem;
 }
 
 .breadcrumb__head {	
-	padding: 5rem;
+	padding: 2rem 0rem;
+	margin-bottom: 2rem;
 	/* margin: 10rem 0rem;
 	background-color: var(--gray-color); */
 }
@@ -728,6 +730,42 @@ footer .container {
   }
 
 
+
+  /* table */
+
+  .content {
+	  max-width: 80%;
+	  margin: 5rem auto;
+	  font-size: 1.6rem;
+  }
+
+  table {
+	  width: 100%;
+	  border-collapse: collapse;
+  }
+
+  thead {
+	  border-bottom: .1rem solid #808080;
+	  
+  }
+  th{
+	padding: .5rem;
+	text-align: center;
+	border-bottom: .1rem solid #808080;
+  }
+  .tr{
+	  transition: opacity .5s ease;
+	 
+  }
+
+  td{
+	  padding: .5rem;
+	  border-bottom: .1rem solid var(--line-color);
+  }
+
+  tr:hover td {
+	  background: var(--gray-color);
+  }
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 
 
