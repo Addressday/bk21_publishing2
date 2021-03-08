@@ -19,20 +19,23 @@ html, body {
 	font-size: 10px;
 	font-family: 'Noto Sans KR', sans-serif;
 	-webkit-font-smoothing: antialiased;
-	overflow-x:hidden;
-	overflow-y:auto;
+}
+
+body {
+	overflow-x:hidden; overflow-y:auto;
 }
 
 
 a {
 	text-decoration: none;
+	color: var(--black-color);
 }
 
 a:hover,
 a:focus {
 	text-decoration: none;
 	outline: none;
-	color: var(--white-color);
+	color: var(--black-color);
 }
 
 ul,
@@ -487,7 +490,7 @@ li {
   }
 
 
-  .Three__card_main {
+.Three__card_main {
 	 margin-right: 20rem;
   }
 
@@ -618,7 +621,7 @@ footer .container {
 .breadcrumb__links {
 	background-color: var(--gray-color);
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	padding: 4rem;
 }
 
@@ -644,8 +647,86 @@ footer .container {
 
 .breadcrumb__content {
 	text-align: center;
-	margin: 12rem;
 }
+
+.breadcrumb__head {	
+	padding: 5rem;
+	/* margin: 10rem 0rem;
+	background-color: var(--gray-color); */
+}
+
+
+.float-layout {
+	padding: 5px 5px;
+	float: left;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	margin: 0;
+  }
+  
+  .breadcrumb__card-container {
+	overflow: hidden;
+	margin-bottom: 3rem;
+  }
+  
+  .breadcrumb__card {
+	color: black;
+	min-height: 100%; /*replace this it in width: 100%*/
+	width: 50%;
+	float: right;
+	text-align: left;
+  }
+  
+  .card-title {
+	font-size: 3rem;
+	border-bottom: .1rem solid var(--line-color);
+	font-weight: bold;
+	padding: 2rem 4rem;
+  }
+  
+  .card-field , .card-number , .card-email, .card-homepage{
+	font-size: 1.6rem;
+	padding: 1rem 4rem;
+  }
+
+
+  /*add this it*/
+  .card-image {
+	display: flex;
+	justify-content: center;
+  }
+  /*-------------*/
+  
+  div.card-image img {
+	width: 30rem;
+	height: 30rem;
+  }
+
+
+/* pagination */
+.pagination {
+	display: inline-block;
+  }
+  
+  .pagination a {
+	color: black;
+	float: left;
+	padding: 2rem 2rem;
+	margin: 2rem;
+	font-size: 1.6rem;
+  }
+
+  .pagination a.active {
+	  background-color: var(--pink-color);
+	  border: .1rem solid var(--pink-color);
+	  color: var(--white-color);
+  }
+
+  .pagination a:hover:not(.active) {
+	  background-color: var(--line-color);
+  }
+
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 
