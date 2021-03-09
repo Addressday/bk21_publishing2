@@ -657,6 +657,12 @@ footer .container {
 	background-color: var(--gray-color); */
 }
 
+.breadcrumb__head a {
+	display: flex;
+	justify-content: center;
+	padding: 2rem;
+	font-size: 1.6rem;
+}
 
 .float-layout {
 	padding: 5px 5px;
@@ -766,6 +772,51 @@ footer .container {
   tr:hover td {
 	  background: var(--gray-color);
   }
+
+
+  /* instructions */
+  .tab-box {
+	font-size: 1.4rem;
+	margin: 5rem;
+	justify-content: center;
+	border: .1rem solid  var(--gray-color);
+}
+.tabs {
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: .1rem solid var(--line-color);
+	background-color: var(--gray-color);
+}
+.tabs__button {
+	padding: 1rem 2rem;
+	border: none;
+	background: none;
+}
+.tabs__button:hover {
+	background-color: #cccccc;
+}
+.tabs__button--active {
+	background-color: #cccccc;
+}
+.tab-content {
+	display: none;
+	padding: 12rem;
+	border-top: none;
+}
+.tab-content--active {
+	display: block;
+}
+.tab-content__caption {
+	margin-top: 0;
+	margin-bottom: 1.6rem;
+}
+
+.tab-content__text {
+	margin: 0;
+}
+
+
+
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 
 

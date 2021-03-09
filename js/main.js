@@ -189,3 +189,32 @@
     });
 
 })(jQuery);
+
+
+
+// tab
+const btns = document.querySelectorAll(".tabs__button");
+const tabContent = document.querySelectorAll(".tab-content");
+
+for (let i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", () => {
+    addClassFunc(btns[i], "tabs__button--active");
+    clearClassFunc(i, btns, "tabs__button--active");
+
+    addClassFunc(tabContent[i], "tab-content--active");
+    clearClassFunc(i, tabContent, "tab-content--active");
+  });
+}
+
+function addClassFunc(elem, elemClass) {
+  elem.classList.add(elemClass);
+}
+
+function clearClassFunc(indx, elems, elemClass) {
+  for (let i = 0; i < elems.length; i++) {
+    if (i === indx) {
+      continue;
+    }
+    elems[i].classList.remove(elemClass);
+  }
+}
