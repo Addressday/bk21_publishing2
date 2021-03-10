@@ -81,11 +81,6 @@ li {
 }
 
 
-.header:hover{
-	/* background-color: var(--white-color); */
-}
-
-
 .header__logo a {
 	display: inline-block;
 }
@@ -452,12 +447,15 @@ li {
 	position: relative;
 }
 
+.callto__text {
+	text-align: center;
+}
+
 .callto__text span {
 	font-size: 1.6rem;
 	color: var(--white-color);
 	padding-top: 1rem;
 	font-weight: 600;
-	text-transform: uppercase;
 	letter-spacing: .1rem;
 	display: block;
 	margin-bottom: 3.5rem;
@@ -605,16 +603,74 @@ footer .container {
 /*---------------------
   Breadcrumb
 -----------------------*/
-
 .breadcrumb-option {
-	padding-top: 17rem;
-	padding-bottom: 12rem;
+	padding: 15rem 0;
+	animation: research 8s ease-in-out infinite;
+}
+.breadcrumb-option__intro {
+	padding: 15rem 0;
+	animation: introduction 8s ease-in-out infinite;
+}
+
+.breadcrumb-option__configure {
+	padding: 15rem 0;
+	animation: configuration 8s ease-in-out infinite;
+}
+
+.breadcrumb-option__inst {
+	padding: 15rem 0;
+	animation: instruction 8s ease-in-out infinite;
+}
+
+
+
+@keyframes introduction {
+	0%, 100% {
+		background-image: url(/img/sub/sub_1_1.png);
+	}
+
+
+	50% {
+		background-image: url(/img/sub/sub_1_2.png);
+	}
+
+}
+
+@keyframes configuration {
+	0%, 100% {
+		background-image: url(/img/sub/sub_2_1.png);
+	}
+
+
+	50% {
+		background-image: url(/img/sub/sub_2_2.png);
+	}
+
+}
+
+@keyframes research {
+	0%, 100% {
+		background-image: url(/img/sub/sub_3_1.png);
+	}
+
+}
+
+@keyframes instruction {
+	0%, 100% {
+		background-image: url(/img/sub/sub_4_1.png);
+	}
+
+
+	50% {
+		background-image: url(/img/sub/sub_4_2.png);
+	}
+
 }
 
 .breadcrumb__text h2 {
 	font-size: 4.2rem;
 	color: var(--white-color);
-	text-transform: uppercase;
+	text-align: center;
 	margin-bottom: 1.2rem;
 }
 
@@ -774,20 +830,26 @@ footer .container {
   }
 
 
-  /* instructions */
-  .tab-box {
+
+/* 자체규정 인피니티스크롤 */
+.tab-box {
 	font-size: 1.3rem;
 	margin: 5rem;
 	border: .1rem solid  var(--gray-color);
 }
 .tabs {
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: center;
 	border-bottom: .1rem solid var(--line-color);
 	background-color: var(--gray-color);
 }
+
+.tabs li {
+	cursor: pointer;
+}
+
 .tabs__button {
-	padding: 1rem 2rem;
+	padding: 2rem 2rem;
 	border: none;
 	background: none;
 }
@@ -797,20 +859,41 @@ footer .container {
 .tabs__button--active {
 	background-color: #cccccc;
 }
-.tab-content {
+
+.tab__content {
 	display: none;
+	padding: 2rem;
 	border-top: none;
 }
-.tab-content--active {
+
+.tab__content--active {
 	display: block;
 }
 
-.tab_container {
+.tab__container img {
+	width: 50%;
+}
+
+.tab__container {
 	border-top: none;
 	width: 100%;
 	height: 60rem;
 	overflow-y: scroll;
 }
+
+#tab1 {
+	background-color: darkblue;
+}
+
+#tab2{
+	background-color: #cc0e74;
+}
+#tab3{
+	background-color: #75cfb8;
+}
+#tab4{
+	background-color: bisque;
+} 
 
 
 /* infinite scroll */
@@ -871,8 +954,9 @@ footer .container {
 	  opacity: 1;
 	}
   }
-  
 
+
+   
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 
