@@ -13,7 +13,17 @@
 }
 
 
-html, body {
+/* rem 크기정리 */
+/* header li 2.5rem
+	차세대 바이오리더 교육연구단 5.4rem
+	비전과전략 4컬럼박스 2rem
+	자세히보기 박스 1.4rem
+	그외 1.6rem
+	하단 bk21 로고 2.3rem
+*/
+
+html,
+body {
 	height: 100%;
 	font-weight: 400;
 	font-size: 10px;
@@ -22,7 +32,8 @@ html, body {
 }
 
 body {
-	overflow-x:hidden; overflow-y:auto;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 
@@ -87,7 +98,7 @@ li {
 
 
 
-.header__menu ul li .navmenu:hover{
+.header__menu ul li .navmenu:hover {
 	color: var(--black-color);
 	font-weight: 500;
 	border-bottom: .5rem solid var(--pink-color);
@@ -150,7 +161,7 @@ li {
 	padding-right: 8rem;
 }
 
-.header__menu ul li .dropdown li:nth-child(5){
+.header__menu ul li .dropdown li:nth-child(5) {
 	border: none;
 }
 
@@ -249,6 +260,7 @@ li {
 	margin-top: 2rem;
 	padding: 1.5rem 5rem;
 }
+
 .hero__text a:hover {
 	color: var(--gray-color)
 }
@@ -374,7 +386,7 @@ li {
 	margin-right: 6rem;
 }
 
-.card_main h3{
+.card_main h3 {
 	font-weight: 600;
 	font-size: 2.4rem;
 }
@@ -398,37 +410,38 @@ li {
 	justify-content: center;
 	flex-wrap: wrap;
 	font-size: 1.6rem;
-  }
-  
-  .card-container .card {
+}
+
+.card-container .card {
 	margin: 1rem;
 	padding: 1rem;
 	width: 30rem;
 	height: 30rem;
-  }
+}
 
-  .card-container .card .card-body {
+.card-container .card .card-body {
 	padding: 1rem;
-  }
+}
 
-  .card-body h3, p {
-	  margin-bottom: 4rem;
-  }
- 
-  .card-container .card img.card-img {
+.card-body h3,
+p {
+	margin-bottom: 4rem;
+}
+
+.card-container .card img.card-img {
 	height: 7rem;
 	width: 7rem;
 	margin: 2rem;
 	object-fit: cover;
-  }
+}
 
-  /* dot */
-  .slider {
+/* dot */
+.slider {
 	max-width: 600px;
 	max-height: 400px;
 	box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
 
-  }
+}
 
 /*---------------------
   Call To Action
@@ -474,25 +487,25 @@ li {
 
 .Three__card-container {
 	margin: 8rem !important;
-    display: flex;
+	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	font-size: 1.6rem;	
-  }
+	font-size: 1.6rem;
+}
 
 .Three__card-container .Three__card img.card-img {
 	height: 26rem;
 	width: 36rem;
 	margin: 0rem 1rem;
 	object-fit: cover;
-  }
+}
 
 
 .Three__card_main {
-	 margin-right: 20rem;
-  }
+	margin-right: 20rem;
+}
 
-.Three__card_main h3{
+.Three__card_main h3 {
 	font-weight: 600;
 	font-size: 2.4rem;
 }
@@ -509,7 +522,7 @@ li {
 }
 
 
-.Three__card-body p{
+.Three__card-body p {
 	text-align: center;
 	font-weight: 500;
 	margin-top: 2rem;
@@ -524,7 +537,8 @@ li {
 	background-color: var(--green-color);
 }
 
-.Three__main__card-body h3, p {
+.Three__main__card-body h3,
+p {
 	margin-bottom: 4rem;
 }
 
@@ -544,7 +558,7 @@ li {
 	padding-top: 8rem;
 	margin: 0 auto;
 	width: 100%;
-	
+
 	font-size: 1.6rem;
 	font-weight: 300;
 }
@@ -607,6 +621,7 @@ footer .container {
 	padding: 15rem 0;
 	animation: research 8s ease-in-out infinite;
 }
+
 .breadcrumb-option__intro {
 	padding: 15rem 0;
 	animation: introduction 8s ease-in-out infinite;
@@ -625,7 +640,9 @@ footer .container {
 
 
 @keyframes introduction {
-	0%, 100% {
+
+	0%,
+	100% {
 		background-image: url(/img/sub/sub_1_1.png);
 	}
 
@@ -637,7 +654,9 @@ footer .container {
 }
 
 @keyframes configuration {
-	0%, 100% {
+
+	0%,
+	100% {
 		background-image: url(/img/sub/sub_2_1.png);
 	}
 
@@ -649,14 +668,18 @@ footer .container {
 }
 
 @keyframes research {
-	0%, 100% {
+
+	0%,
+	100% {
 		background-image: url(/img/sub/sub_3_1.png);
 	}
 
 }
 
 @keyframes instruction {
-	0%, 100% {
+
+	0%,
+	100% {
 		background-image: url(/img/sub/sub_4_1.png);
 	}
 
@@ -706,7 +729,7 @@ footer .container {
 	margin: 5rem;
 }
 
-.breadcrumb__head {	
+.breadcrumb__head {
 	padding: 2rem 0rem;
 	margin-bottom: 2rem;
 	/* margin: 10rem 0rem;
@@ -727,107 +750,114 @@ footer .container {
 	height: auto;
 	box-sizing: border-box;
 	margin: 0;
-  }
-  
-  .breadcrumb__card-container {
+}
+
+.breadcrumb__card-container {
 	overflow: hidden;
 	margin-bottom: 3rem;
-  }
-  
-  .breadcrumb__card {
+}
+
+.breadcrumb__card {
 	color: black;
-	min-height: 100%; /*replace this it in width: 100%*/
+	min-height: 100%;
+	/*replace this it in width: 100%*/
 	width: 50%;
 	float: right;
 	text-align: left;
-  }
-  
-  .card-title {
+}
+
+.card-title {
 	font-size: 3rem;
 	border-bottom: .1rem solid var(--line-color);
 	font-weight: bold;
 	padding: 2rem 4rem;
-  }
-  
-  .card-field , .card-number , .card-email, .card-homepage{
+}
+
+.card-field,
+.card-number,
+.card-email,
+.card-homepage {
 	font-size: 1.6rem;
 	padding: 1rem 4rem;
-  }
+}
 
 
-  /*add this it*/
-  .card-image {
+/*add this it*/
+.card-image {
 	display: flex;
 	justify-content: center;
-  }
-  /*-------------*/
-  
-  div.card-image img {
+}
+
+/*-------------*/
+
+div.card-image img {
 	width: 30rem;
 	height: 30rem;
-  }
+}
 
 
 /* pagination */
 .pagination {
 	display: inline-block;
-  }
-  
-  .pagination a {
+}
+
+.pagination a {
 	color: black;
 	float: left;
 	padding: 2rem 2rem;
 	margin: 2rem;
 	font-size: 1.6rem;
-  }
+}
 
-  .pagination a.active {
-	  background-color: var(--pink-color);
-	  border: .1rem solid var(--pink-color);
-	  color: var(--white-color);
-  }
+.pagination a.active {
+	background-color: var(--pink-color);
+	border: .1rem solid var(--pink-color);
+	color: var(--white-color);
+}
 
-  .pagination a:hover:not(.active) {
-	  background-color: var(--line-color);
-  }
+.pagination a:hover:not(.active) {
+	background-color: var(--line-color);
+}
 
 
 
-  /* table */
+/* table */
 
-  .content {
-	  max-width: 80%;
-	  margin: 5rem auto;
-	  font-size: 1.6rem;
-  }
+.content {
+	max-width: 80%;
+	margin: 5rem auto;
+	font-size: 1.6rem;
+}
 
-  table {
-	  width: 100%;
-	  border-collapse: collapse;
-  }
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
 
-  thead {
-	  border-bottom: .1rem solid #808080;
-	  
-  }
-  th{
+thead {
+	border-bottom: .1rem solid #808080;
+
+}
+
+th {
 	padding: .5rem;
 	text-align: center;
 	border-bottom: .1rem solid #808080;
-  }
-  .tr{
-	  transition: opacity .5s ease;
-	 
-  }
+}
 
-  td{
-	  padding: .5rem;
-	  border-bottom: .1rem solid var(--line-color);
-  }
+.tr {
+	transition: opacity .5s ease;
 
-  tr:hover td {
-	  background: var(--gray-color);
-  }
+}
+
+td {
+	padding: .5rem;
+	border-bottom: .1rem solid var(--line-color);
+}
+
+tr:hover td {
+	background: var(--gray-color);
+}
 
 
 
@@ -835,8 +865,9 @@ footer .container {
 .tab-box {
 	font-size: 1.3rem;
 	margin: 5rem;
-	border: .1rem solid  var(--gray-color);
+	border: .1rem solid var(--gray-color);
 }
+
 .tabs {
 	display: flex;
 	justify-content: center;
@@ -853,9 +884,11 @@ footer .container {
 	border: none;
 	background: none;
 }
+
 .tabs__button:hover {
 	background-color: #cccccc;
 }
+
 .tabs__button--active {
 	background-color: #cccccc;
 }
@@ -881,27 +914,14 @@ footer .container {
 	overflow-y: scroll;
 }
 
-#tab1 {
-	background-color: darkblue;
-}
-
-#tab2{
-	background-color: #cc0e74;
-}
-#tab3{
-	background-color: #75cfb8;
-}
-#tab4{
-	background-color: bisque;
-} 
 
 
 /* infinite scroll */
 #list {
 	padding: 0px;
-  }
-  
-  #list li {
+}
+
+#list li {
 	height: 250px;
 	line-height: 250px;
 	display: block;
@@ -910,53 +930,53 @@ footer .container {
 	text-align: center;
 	vertical-align: middle;
 	font-size: 3em;
-  }
-  
-  #msg-loading {
+}
+
+#msg-loading {
 	background-color: honeydew;
 	color: red;
 	text-align: center;
 	border-radius: 5px;
-  }
-  
-  .fade-in {
+}
+
+.fade-in {
 	opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 0.5s;
-  }
-  
-  .fade-out {
+}
+
+.fade-out {
 	opacity: 0;
 	animation-name: fadeOutOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 0.5s;
-  }
-  
-  @keyframes fadeInOpacity {
+}
+
+@keyframes fadeInOpacity {
 	0% {
-	  opacity: 0;
+		opacity: 0;
 	}
-  
+
 	100% {
-	  opacity: 1;
+		opacity: 1;
 	}
-  }
-  
-  @keyframes fadeOutOpacity {
+}
+
+@keyframes fadeOutOpacity {
 	0% {
-	  opacity: 0;
+		opacity: 0;
 	}
-  
+
 	100% {
-	  opacity: 1;
+		opacity: 1;
 	}
-  }
+}
 
 
-   
+
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 
@@ -1001,7 +1021,7 @@ footer .container {
 	.hero__slider.owl-carousel .owl-nav button.owl-next {
 		right: 1.5rem;
 	}
-	
+
 }
 
 /* Tablet Device = 768px */
@@ -1156,7 +1176,7 @@ footer .container {
 		display: none;
 	}
 
-	
+
 
 	.callto__wrapper {
 		display: block;
@@ -1175,20 +1195,20 @@ footer .container {
 	.callto .rightBtn {
 		display: none;
 	}
-	
+
 
 	/* four__card */
 
-	.card-container{
+	.card-container {
 		display: grid;
 		justify-content: flex-start;
 		grid-template-columns: repeat(4, 1fr);
 	}
 
-	.card-container > .card h3 {
+	.card-container>.card h3 {
 		margin-bottom: 1rem;
 	}
-	
+
 	/* three__card */
 
 
@@ -1198,17 +1218,17 @@ footer .container {
 		margin-bottom: 3rem;
 	}
 
- 	.Three__card-container {
+	.Three__card-container {
 		display: block;
 		text-align: center;
 
 	}
 
-	.Three__card-container > .Three__card_main {
+	.Three__card-container>.Three__card_main {
 		margin-bottom: 4rem;
 	}
 
-	.Three__card p{
+	.Three__card p {
 		margin-bottom: 3rem;
 	}
 
@@ -1225,7 +1245,7 @@ footer .container {
 		padding: 3rem;
 		border-bottom: .1rem solid var(--line-color);
 	}
-	
+
 	.footer__top a:nth-child(5) {
 		padding-bottom: 0;
 	}
@@ -1246,7 +1266,7 @@ footer .container {
 		display: block;
 	}
 
-	.footer__widget > .footer__logo {
+	.footer__widget>.footer__logo {
 		margin-bottom: 5rem;
 	}
 
@@ -1254,12 +1274,12 @@ footer .container {
 		padding-bottom: 4rem;
 	}
 
-	.footer__widget > .footer__address li {
+	.footer__widget>.footer__address li {
 		display: flex;
 		padding: 1rem 0rem;
 	}
 
-	.footer__widget > .footer__address p {
+	.footer__widget>.footer__address p {
 		line-height: 1.8;
 	}
 }
@@ -1277,7 +1297,7 @@ footer .container {
 		float: left;
 		margin: auto;
 	}
-	
+
 	.hero__text h2 {
 		font-size: 1.2rem;
 		line-height: 2.5rem;
@@ -1403,7 +1423,7 @@ footer .container {
 		display: block !important;
 	}
 
-	
+
 	.header__menu {
 		display: none;
 	}
@@ -1455,7 +1475,7 @@ footer .container {
 	.callto .rightBtn {
 		display: none;
 	}
-	
+
 
 	/* 4card */
 
@@ -1464,19 +1484,19 @@ footer .container {
 		justify-content: baseline;
 	}
 
-	.card-container{
+	.card-container {
 		display: grid;
 		justify-content: flex-start;
 		grid-template-columns: repeat(4, 1fr);
 	}
 
-	.card-container > .card h3 {
+	.card-container>.card h3 {
 		margin-bottom: 1rem;
 	}
 
 
 
-	
+
 	/* three_card */
 
 
@@ -1486,12 +1506,12 @@ footer .container {
 		margin-bottom: 3rem;
 	}
 
- 	.Three__card-container {
+	.Three__card-container {
 		display: block;
 		text-align: center;
 	}
 
-	.Three__card p{
+	.Three__card p {
 		margin-bottom: 3rem;
 	}
 
@@ -1524,17 +1544,17 @@ footer .container {
 		display: block;
 	}
 
-	.footer__widget > .footer__logo {
+	.footer__widget>.footer__logo {
 		margin-bottom: 0rem;
 	}
 
 
-	.footer__widget > .footer__address li {
+	.footer__widget>.footer__address li {
 		display: flex;
 		padding: 1rem 0rem;
 	}
 
-	.footer__widget > .footer__address p {
+	.footer__widget>.footer__address p {
 		line-height: 1.8;
 	}
 }
