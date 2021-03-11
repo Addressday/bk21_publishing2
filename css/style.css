@@ -14,8 +14,9 @@
 
 
 /* rem 크기정리 */
-/* header li 2.5rem
-	차세대 바이오리더 교육연구단 5.4rem
+/* 
+	네비게이션바 메뉴구성 - 1.5rem 15px
+	차세대 바이오리더 교육연구단 - 5.4rem
 	비전과전략 4컬럼박스 2rem
 	자세히보기 박스 1.4rem
 	그외 1.6rem
@@ -88,15 +89,12 @@ li {
 	z-index: 9;
 	padding: 2rem 0 2rem;
 	text-align: center;
-	font-size: 1.4rem;
 }
 
 
 .header__logo a {
 	display: inline-block;
 }
-
-
 
 .header__menu ul li .navmenu:hover {
 	color: var(--black-color);
@@ -105,12 +103,11 @@ li {
 }
 
 .header__menu ul li {
-	list-style: none;
 	display: inline-block;
+	justify-content: center;
 	position: relative;
 	margin-right: 8rem;
 	margin: 1rem 5rem;
-	justify-content: flex-end;
 }
 
 .header__menu ul li a {
@@ -123,15 +120,13 @@ li {
 	position: relative;
 }
 
+
 .header__menu ul li:hover .dropdown {
-	top: 8.5rem;
+	top: 6.1rem;
 	opacity: 1;
 	visibility: visible;
 }
 
-.header__menu ul li:last-child {
-	margin-right: 0;
-}
 
 .header__menu ul li .dropdown {
 	position: absolute;
@@ -154,19 +149,14 @@ li {
 }
 
 .header__menu ul li .dropdown li {
-	display: flex;
-	margin-right: 0;
 	border-right: .1rem solid var(--line-color);
 	margin-top: 2rem;
 	padding-right: 8rem;
 }
 
-.header__menu ul li .dropdown li:nth-child(5) {
-	border: none;
-}
 
 .header__menu ul li .dropdown li a {
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	color: var(--black-color);
 	font-weight: 400;
 	padding: .5rem 2rem;
@@ -188,6 +178,7 @@ li {
 .header__widget a {
 	color: var(--white-color);
 	border: .1rem solid var(--white-color);
+	font-size: 1.6rem;
 	font-weight: 300;
 	padding: 1rem 2rem;
 }
@@ -221,7 +212,7 @@ li {
 
 .hero__items {
 	height: 75rem;
-	padding-right: 85rem;
+	padding-right: 102rem;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -236,16 +227,12 @@ li {
 
 .hero__text h2 {
 	color: var(--white-color);
-	font-size: 7.2rem;
-	font-weight: bold;
-	line-height: 7.5rem;
+	font-size: 5.4rem;
+	font-weight: 700;
 	margin-bottom: 2.5rem;
 	position: relative;
 	top: 10rem;
 	opacity: 0;
-	-webkit-transition: all, 0.3s;
-	-o-transition: all, 0.3s;
-	transition: all, 0.3s;
 }
 
 .hero__text p {
@@ -377,6 +364,7 @@ li {
 
 /* 4card */
 
+
 .card:hover {
 	color: var(--white-color);
 	background-color: var(--pink-color);
@@ -386,21 +374,24 @@ li {
 	margin-right: 6rem;
 }
 
-.card_main h3 {
-	font-weight: 600;
-	font-size: 2.4rem;
-}
 
 .card_main a {
 	color: var(--pink-color);
 	border: .1rem solid var(--pink-color);
+	font-size: 1.4rem;
 	padding: 1rem 3rem;
 }
+
 
 .card_main a:hover {
 	background-color: var(--pink-color);
 	color: var(--white-color);
 }
+
+.card_main h3 {
+	
+}
+	
 
 .card-container {
 	padding: 8rem;
@@ -414,26 +405,23 @@ li {
 
 .card-container .card {
 	margin: 1rem;
-	padding: 1rem;
+	padding: 0rem 3rem;
 	width: 30rem;
 	height: 30rem;
 }
 
-.card-container .card .card-body {
-	padding: 1rem;
+.card-container > .card img {
+	height: 6rem;
+	width: 6rem;
+	margin: 3rem 1rem;
 }
 
-.card-body h3,
-p {
-	margin-bottom: 4rem;
+.card-body > h3 {
+	font-weight: 600;
+	font-size: 2.0rem;
+	margin-bottom: 3rem;
 }
 
-.card-container .card img.card-img {
-	height: 7rem;
-	width: 7rem;
-	margin: 2rem;
-	object-fit: cover;
-}
 
 /* dot */
 .slider {
@@ -513,6 +501,7 @@ p {
 .Three__card_main a {
 	color: var(--green-color);
 	border: .1rem solid var(--green-color);
+	font-size: 1.4rem;
 	padding: 1rem 3rem;
 }
 
