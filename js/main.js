@@ -175,6 +175,10 @@
 
 
 
+
+
+
+
 // tab
 const btns = document.querySelectorAll(".tabs__button");
 const tabContent = document.querySelectorAll(".tab__content");
