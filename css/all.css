@@ -1,0 +1,165 @@
+/* Default Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* color */
+
+:root {
+	--white-color: #ffffff;
+	--black-color: #000000;
+	--pink-color: #cc0e74;
+	--green-color: #75cfb8;
+	--gray-color: #808080;
+	--line-color: #c5c5c5;
+}
+
+
+/* 글자 크기정리 rem */
+/* 
+
+	1rem === 10px
+
+	전체문서 200rem
+
+	교육연구단 소개,구성 2.5rem
+
+	비전과전략 4컬럼박스 2rem
+
+	차세대 바이오리더 교육연구단 - 5.4rem
+	브레인코리아 2.1rem
+
+	자세히보기 박스 1.4rem
+
+	로그인 3컬럼 1.4rem
+
+	breadcrumb__text 4.0rem
+
+	햄버거바 슬릭바 글자 1rem
+
+	그외 1.6rem
+
+	
+	서브페이지 문서 140rem
+
+*/
+
+
+html,
+body {
+	height: 100%;
+	font-weight: 400;
+	font-size: 10px;
+	font-family: 'Noto Sans KR', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+a {
+	text-decoration: none;
+	color: var(--black-color);
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+	color: var(--black-color);
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+
+
+.set-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	height: 35rem;
+}
+
+
+
+.container {
+	width: 100%;
+	max-width: 200rem;
+	margin: 0 auto;
+}
+
+
+
+.footer {
+	background-color: var(--gray-color);
+	padding-top: 8rem;
+	margin: 0 auto;
+	width: 100%;
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+
+.footer__top {
+	border-bottom: .1rem solid var(--line-color);
+	padding-bottom: 4rem;
+	text-align: center;
+}
+
+.footer__top a {
+	padding-right: 4rem;
+}
+
+
+.footer__widget__wrapper {
+	padding: 0rem 6rem;
+}
+
+.footer__widget__wrapper a {
+	display: flex;
+	padding-right: 4rem;
+}
+
+.footer__widget__wrapper a:nth-child(4) {
+	padding-right: 0px;
+}
+
+.footer__widget {
+	margin: 4rem 0rem 2rem 0rem;
+	display: flex;
+}
+
+.footer__widget a {
+	color: var(--black-color);
+	font-weight: 500;
+}
+
+.footer__logo img {
+	float: left;
+	width: 20rem;
+	margin-right: 5rem;
+}
+
+
+.footer__address li {
+	display: inline-block;
+	margin-bottom: 2rem;
+}
+
+
+footer .container {
+	width: 100%;
+	max-width: 155rem;
+}
+
+
