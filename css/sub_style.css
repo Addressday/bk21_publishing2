@@ -103,6 +103,7 @@ li {
 -----------------------*/
 
 .header {
+	background-color: var(--white-color);
 	position: absolute;
 	display: flex;
 	width: 100%;
@@ -133,9 +134,9 @@ li {
 .header__menu a {
 	display:block;
 	padding:0 1rem;	
-	color: var(--white-color);
+	color: var(--black-color);
 	font-size:1.6rem;
-	font-weight: 200;
+	/* font-weight: 500; */
 	line-height: 6rem;
 	margin: 0rem 4rem;
 	text-decoration:none;
@@ -175,8 +176,8 @@ li {
 /* nav end */
 
 .header__widget a {
-	color: var(--white-color);
-	border: .1rem solid var(--white-color);
+	color: var(--black-color);
+	border: .1rem solid var(--line-color);
 	font-size: 1.6rem;
 	font-weight: 300;
 	padding: 1rem 2rem;
@@ -189,6 +190,7 @@ li {
 
 .header__widget .header__widget__site {
 	background-color: var(--pink-color);
+	color: var(--white-color);
 	border: none;
 }
 
