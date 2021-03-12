@@ -219,73 +219,37 @@
 }
 
 .breadcrumb__head {
+	text-align: left;
 	padding: 2rem 0rem;
 	margin-bottom: 2rem;
 }
 
-.breadcrumb__card-container {
-	overflow: hidden;
-	margin-bottom: 3rem;
+/* professor */
+
+.professor {
+	/* background-color: #808080; */
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
 
-.breadcrumb__card {
-	color: black;
-	min-height: 100%;
-	width: 50%;
-	float: right;
+.professor-king {
+	display: flex;
+}
+
+.professor img {
+	margin-bottom: 4rem;
+}
+
+.professor_info {
+	padding: 2rem;
+	font-size: 1.6rem;
 	text-align: left;
 }
 
-
-.card-title {
-	font-size: 2.0rem;
-	border-bottom: .1rem solid var(--line-color);
-	font-weight: bold;
-	padding: 2rem 4rem;
+.professor_info ul li {
+	margin-bottom: 1rem;
 }
 
-.card-field,
-.card-number,
-.card-email,
-.card-homepage {
-	font-size: 1.6rem;
-	padding: 1rem 4rem;
-}
-
-
-.card-image {
-	display: flex;
-	justify-content: center;
-}
-
-div.card-image img {
-	width: 30rem;
-	height: 30rem;
-}
-
-
-/* pagination */
-.pagination {
-	display: inline-block;
-}
-
-.pagination a {
-	color: black;
-	float: left;
-	padding: 2rem 2rem;
-	margin: 2rem;
-	font-size: 1.6rem;
-}
-
-.pagination a.active {
-	background-color: var(--pink-color);
-	border: .1rem solid var(--pink-color);
-	color: var(--white-color);
-}
-
-.pagination a:hover:not(.active) {
-	background-color: var(--line-color);
-}
 
 
 
@@ -327,6 +291,8 @@ td {
 tr:hover td {
 	background: var(--gray-color);
 }
+
+
 
 
 
