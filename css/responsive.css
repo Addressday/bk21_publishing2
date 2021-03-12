@@ -1,5 +1,18 @@
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 
+/* Default Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* color */
+
+:root {
+	--white-color: #ffffff;
+	--black-color: #000000;
+	--pink-color: #cc0e74;
+	--green-color: #75cfb8;
+	--gray-color: #f7f7f7;
+	--line-color: #c5c5c5;
+}
 
 
 @media only screen and (min-width: 145rem) {
@@ -286,6 +299,7 @@
 		right: 1.5rem;
 		top: 1.4rem;
 	}
+	
 
 	.offcanvas-menu-overlay {
 		position: fixed;
@@ -310,9 +324,9 @@
 	.offcanvas-menu-wrapper {
 		position: fixed;
 		left: -30rem;
-		width: 30rem;
+		width: 20rem;
 		height: 100%;
-		background: var(--black-color);
+		background: #00000057;
 		padding: 5rem 2rem 3rem 3rem;
 		margin-bottom: 2rem;
 		display: block;
@@ -329,6 +343,11 @@
 		left: 0;
 	}
 
+	.offcanvas-menu-wrapper li a {
+		color: var(--white-color);
+	}
+
+
 	.offcanvas__logo {
 		margin-bottom: 3rem;
 	}
@@ -336,6 +355,44 @@
 	.offcanvas__logo a {
 		display: inline-block;
 	}
+
+
+	/* moblie__menu */
+
+	.mobile__menu li {
+		position: relative;
+		margin-bottom: 1rem;
+	}
+
+	.mobile__menu li a:hover {
+		color: var(--pink-color);
+		font-weight: 600;
+	}
+
+	/* dropdown */
+
+	.mobile__menu li a:hover {
+		display: block;
+	}
+	.mobile__menu .dropdown {
+		display: none;
+	}
+
+	
+
+
+	.offcanvas__widget li {
+		margin-bottom: 1rem;
+	}
+
+	.offcanvas__widget li a:hover {
+		color: var(--green-color);
+		font-weight: 600;
+	}
+
+
+		/*offcanvas end */
+
 
 	.slicknav_btn {
 		display: none;
@@ -355,8 +412,9 @@
 	.slicknav_nav a {
 		padding: .7rem 0;
 		margin: 0;
+		font-size: 1rem;
 		color: var(--white-color);
-		font-weight: 600;
+		font-weight: 500;
 	}
 
 	.slicknav_nav .slicknav_arrow {
@@ -372,7 +430,7 @@
 	.slicknav_nav a:hover {
 		border-radius: 0;
 		background: transparent;
-		color: var(--white-color);
+		color: var(--pink-color);
 	}
 
 	.slicknav_nav {
@@ -509,78 +567,3 @@
 		line-height: 1.8;
 	}
 }
-
-
-/* Small Device = 320px */
-
-/* @media only screen and (max-width: 47.9rem) {
-	header {
-		padding: 2rem 0 0;
-		text-align: center;
-		padding-bottom: 4rem;
-		border-bottom: .1rem solid var(--white-color);
-	}
-
-	.section-title h2 {
-		font-size: 2.8rem;
-		line-height: 1;
-	}
-
-	.hero__text h2 {
-		font-size: 2.8rem;
-		line-height: 4.2rem;
-	}
-
-	.hero__items {
-		height: 61rem;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		padding: 0 4rem;
-	}
-
-
-	.about__pic__inner:after {
-		display: none;
-	}
-
-	.callto__text h2 {
-		font-size: 3rem;
-		line-height: 4.6rem;
-	}
-
-
-	.project {
-		padding: 0;
-	}
-
-	.breadcrumb__text h2 {
-		font-size: 3.2rem;
-	}
-
-
-	.about .section-title h2 {
-		font-size: 2.8rem;
-		line-height: 4.5rem;
-	}
-
-	.Three__card_main {
-		text-align: center;
-		margin-right: 0;
-		margin-bottom: 3rem;
-	}
-
- 	.Three__card-container {
-		display: block;
-		text-align: center;
-	}
-
-	.Three__card p{
-		margin-bottom: 3rem;
-	}
-
-
-	.footer__top__text h2 {
-		font-size: 3.2rem;
-	}
-} */
