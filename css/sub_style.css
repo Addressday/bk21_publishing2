@@ -1,9 +1,15 @@
+.set-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	height: 35rem;
+}
+
 /*---------------------
   Header
 -----------------------*/
 
 .header {
-	background-color: var(--white-color);
 	position: absolute;
 	display: flex;
 	width: 100%;
@@ -214,36 +220,35 @@
 }
 
 .breadcrumb__content {
-	text-align: center;
+	display: flex;
+	justify-content: center;
 	margin: 10rem 40rem;
 }
 
+
+
 .breadcrumb__head {
-	text-align: left;
+	text-align: center;
 	padding: 2rem 0rem;
 	margin-bottom: 2rem;
 }
 
 /* professor */
+.professor_list {
+	display: grid;
+	grid-template-columns: repeat(2,2fr);
+}
 
 .professor {
-	/* background-color: #808080; */
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-}
-
-.professor-king {
-	display: flex;
-}
-
-.professor img {
-	margin-bottom: 4rem;
+	text-align: center;
+	display: inline-block;
+	width: 50rem;
 }
 
 .professor_info {
+	text-align: center;
 	padding: 2rem;
 	font-size: 1.6rem;
-	text-align: left;
 }
 
 .professor_info ul li {

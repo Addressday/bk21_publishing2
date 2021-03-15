@@ -14,6 +14,76 @@
 	--line-color: #c5c5c5;
 }
 
+/* 글자 크기정리 rem */
+/* 
+
+	1rem === 10px
+
+	전체문서 200rem
+
+	교육연구단 소개,구성 2.5rem
+
+	비전과전략 4컬럼박스 2rem
+
+	차세대 바이오리더 교육연구단 - 5.4rem
+	브레인코리아 2.1rem
+
+	자세히보기 박스 1.4rem
+
+	로그인 3컬럼 1.4rem
+
+	breadcrumb__text 4.0rem
+
+	햄버거바 슬릭바 글자 1rem
+
+	그외 1.6rem
+
+	
+	서브페이지 문서 140rem
+
+*/
+
+
+html,
+body {
+	height: 100%;
+	font-weight: 400;
+	font-size: 10px;
+	font-family: 'Noto Sans KR', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+a {
+	text-decoration: none;
+	color: var(--black-color);
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+	color: var(--black-color);
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+
 
 @media only screen and (min-width: 145rem) {
 	.container {
@@ -53,6 +123,32 @@
 
 	.hero__slider.owl-carousel .owl-nav button.owl-next {
 		right: 1.5rem;
+	}
+
+	.card-container {
+		display: flex;
+		align-items: center;
+	}
+
+	.card_main {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	.card-container>.card h3 {
+		margin-bottom: 1rem;
+	}
+
+
+	.Three__card-container {
+		display: flex;
+		align-items: center;
+	}
+
+	.Three__card_main {
+		text-align: center;
+		margin-right: 0;
+		margin-bottom: 4rem;
 	}
 
 }
@@ -158,9 +254,13 @@
 	/* four__card */
 
 	.card-container {
-		display: grid;
-		justify-content: flex-start;
-		grid-template-columns: repeat(4, 1fr);
+		display: flex;
+		align-items: center;
+	}
+
+	.card_main {
+		text-align: center;
+		margin-bottom: 2rem;
 	}
 
 	.card-container>.card h3 {
@@ -169,27 +269,16 @@
 
 	/* three__card */
 
+	.Three__card-container {
+		display: flex;
+		align-items: center;
+	}
 
 	.Three__card_main {
 		text-align: center;
 		margin-right: 0;
-		margin-bottom: 3rem;
-	}
-
-	.Three__card-container {
-		display: block;
-		text-align: center;
-
-	}
-
-	.Three__card-container>.Three__card_main {
 		margin-bottom: 4rem;
 	}
-
-	.Three__card p {
-		margin-bottom: 3rem;
-	}
-
 
 	.footer {
 		background-color: var(--gray-color);
@@ -481,16 +570,15 @@
 
 	/* 4card */
 
+	.card-container {
+		display: flex;
+		align-items: center;
+	}
+
 	.card_main {
 		text-align: center;
 		margin-bottom: 4rem;
 		margin-right: 0;
-	}
-
-	.card-container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 	}
 
 	.card-container>.card h3 {
@@ -501,6 +589,10 @@
 
 	/* three_card */
 
+	.Three__card-container {
+		display: flex;
+		align-items: center;
+	}
 
 	.Three__card_main {
 		text-align: center;
@@ -508,15 +600,15 @@
 		margin-bottom: 3rem;
 	}
 
-	.Three__card-container {
-		display: block;
-		text-align: center;
-	}
 
 	.Three__card p {
 		margin-bottom: 3rem;
 	}
 
+
+	.Three__card img {
+		width: 30rem;
+	}
 
 	/* footer */
 

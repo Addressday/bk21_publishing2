@@ -84,15 +84,6 @@ li {
 
 
 
-.set-bg {
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top center;
-	height: 35rem;
-}
-
-
-
 .container {
 	width: 100%;
 	max-width: 200rem;

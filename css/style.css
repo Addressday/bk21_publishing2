@@ -1,6 +1,12 @@
+.set-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+
 
 /* header */
-
 .header {
 	position: absolute;
 	display: flex;
@@ -388,11 +394,10 @@ p {
 	text-align: center;
 }
 
-.Three__card-container .Three__card img.card-img {
+.Three__card-container .Three__card{
 	height: 26rem;
 	width: 36rem;
 	margin: 0rem 1rem;
-	object-fit: cover;
 }
 
 
