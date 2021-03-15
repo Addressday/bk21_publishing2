@@ -1,3 +1,17 @@
+/* Default Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* color */
+
+:root {
+	--white-color: #ffffff;
+	--black-color: #000000;
+	--pink-color: #cc0e74;
+	--green-color: #75cfb8;
+	--gray-color: #808080;
+	--line-color: #c5c5c5;
+}
+
 .set-bg {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -30,22 +44,22 @@
 /* nav */
 .header__menu ul {
 	position: relative;
-	}
-	
+}
+
 .header__menu ul li {
-	display:inline-block;
-	}
+	display: inline-block;
+}
 
 
 .header__menu a {
-	display:block;
-	padding:0 1rem;	
+	display: block;
+	padding: 0 1rem;
 	color: var(--black-color);
-	font-size:1.6rem;
+	font-size: 1.6rem;
 	/* font-weight: 500; */
 	line-height: 6rem;
 	margin: 0rem 4rem;
-	text-decoration:none;
+	text-decoration: none;
 }
 
 .header__menu a:hover {
@@ -59,26 +73,27 @@
 
 .header__menu .dropdown {
 	display: none;
-	position: absolute; 
+	position: absolute;
 	background-color: var(--gray-color);
 }
 
 .header__menu .dropdown a {
 	color: var(--black-color);
 }
-	
+
 /* Display Dropdowns on Hover */
-.header__menu ul li:hover > ul {
-	display:inherit;
+.header__menu ul li:hover>ul {
+	display: inherit;
 }
-	
+
 /* First Tier Dropdown */
 .header__menu .dropdown li {
-	width:28rem;
-	float:none;
-	display:list-item;
+	width: 28rem;
+	float: none;
+	display: list-item;
 	position: relative;
 }
+
 /* nav end */
 
 .header__widget a {
@@ -222,31 +237,34 @@
 .breadcrumb__content {
 	display: flex;
 	justify-content: center;
-	margin: 10rem 40rem;
+	margin: 10rem;
 }
 
-
-
-.breadcrumb__head {
-	text-align: center;
-	padding: 2rem 0rem;
-	margin-bottom: 2rem;
-}
 
 /* professor */
+
+
+
 .professor_list {
-	display: grid;
-	grid-template-columns: repeat(2,2fr);
+	text-align: center;
+}
+
+
+
+.breadcrumb__head h1 {
+	padding: 2rem;
+	text-align: center;
 }
 
 .professor {
-	text-align: center;
 	display: inline-block;
 	width: 50rem;
+	margin: 2rem;
 }
 
 .professor_info {
-	text-align: center;
+	float: right;
+	text-align: left;
 	padding: 2rem;
 	font-size: 1.6rem;
 }
@@ -256,14 +274,13 @@
 }
 
 
-
-
 /* table */
 
 .content {
 	margin: 5rem auto;
 	font-size: 1.6rem;
 	display: flex;
+	text-align: center;
 	justify-content: center;
 }
 
@@ -303,6 +320,7 @@ tr:hover td {
 
 /* tabbox */
 .tab-box {
+	text-align: center;
 	display: inline-block;
 	font-size: 1.6rem;
 	border: .1rem solid var(--gray-color);
@@ -354,15 +372,16 @@ tr:hover td {
 
 /* 사이트맵 */
 
-.sitemap  {
+.sitemap {
 	text-align: center;
-	display: inline-block;	
+	display: inline-block;
 }
 
 .sitemap h1 {
 	padding: 5rem;
 	border-bottom: .3rem solid var(--pink-color);
 }
+
 .sitemap li a {
 	color: var(--black-color);
 	background: var(--gray-color);
@@ -462,7 +481,8 @@ hgroup {
 	justify-content: center;
 	align-items: center;
 	padding: 0 2rem;
-	min-width: 25rem;;
+	min-width: 25rem;
+	;
 	height: 5rem;
 	background-color: transparent;
 	border-radius: .7rem;
