@@ -23,8 +23,8 @@
 
 
     /*------------------
-		Navigation
-	--------------------*/
+        Navigation
+    --------------------*/
     $(".mobile-menu").slicknav({
         prependTo: '#mobile-menu-wrap',
         allowParentLinks: true
@@ -103,8 +103,8 @@
         asNavFor: '.testimonial__client',
         prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"><i></i></i></button>',
         nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"><i></i></i></button>',
-      });
-      $('.testimonial__client').slick({
+    });
+    $('.testimonial__client').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         asNavFor: '.testimonial__carousel',
@@ -114,22 +114,22 @@
         focusOnSelect: true,
         responsive: [
             {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 3,
-              }
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                }
             },
             {
-              breakpoint: 575,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                variableWidth: false
-              }
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: false
+                }
             }
-          ]
-        
-      });
+        ]
+
+    });
 
     /*---------------------------------
         Logo Carousel
@@ -184,27 +184,40 @@ const btns = document.querySelectorAll(".tabs__button");
 const tabContent = document.querySelectorAll(".tab__content");
 
 for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", () => {
-    addClassFunc(btns[i], "tabs__button--active");
-    clearClassFunc(i, btns, "tabs__button--active");
+    btns[i].addEventListener("click", () => {
+        addClassFunc(btns[i], "tabs__button--active");
+        clearClassFunc(i, btns, "tabs__button--active");
 
-    addClassFunc(tabContent[i], "tab__content--active");
-    clearClassFunc(i, tabContent, "tab__content--active");
-  });
+        addClassFunc(tabContent[i], "tab__content--active");
+        clearClassFunc(i, tabContent, "tab__content--active");
+    });
 }
 
 function addClassFunc(elem, elemClass) {
-  elem.classList.add(elemClass);
+    elem.classList.add(elemClass);
 }
 
 function clearClassFunc(indx, elems, elemClass) {
-  for (let i = 0; i < elems.length; i++) {
-    if (i === indx) {
-      continue;
+    for (let i = 0; i < elems.length; i++) {
+        if (i === indx) {
+            continue;
+        }
+        elems[i].classList.remove(elemClass);
     }
-    elems[i].classList.remove(elemClass);
-  }
 }
 
 
+
+// 학생 보기 숨기기
+
+$(document).ready(function () {
+    //현재HTML문서가 브라우저에 로딩이 끝났다면   
+    $('#showBt').click(function () {
+        $("#showHide").hide();
+    });//click
+
+    $('#hideBt').click(function () {
+        $("#showHide").show();
+    });
+});//ready  
 
